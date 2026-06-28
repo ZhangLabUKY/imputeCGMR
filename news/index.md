@@ -2,6 +2,8 @@
 
 ## imputeCGM 0.0.3
 
+### Major changes
+
 - Renamed the package from `CGMissingDataR` to `imputeCGM`.
 
 - Updated package metadata, GitHub links, pkgdown links, README content,
@@ -15,7 +17,7 @@
 
 ### Major changes
 
-- [`run_missing_glucose_imputation()`](https://zhanglabuky.github.io/imputeCGMRR/reference/run_missing_glucose_imputation.md)
+- [`run_missing_glucose_imputation()`](https://zhanglabuky.github.io/imputeCGMR/reference/run_missing_glucose_imputation.md)
   now handles both explicit missing glucose values and missing readings
   implied by timestamp gaps. When timestamps skip expected CGM
   intervals, the function regularizes each subject to the expected
@@ -35,7 +37,7 @@
   estimate. Users who need whole-number glucose values for reporting can
   round this column after imputation.
 
-- [`run_missing_glucose_imputation()`](https://zhanglabuky.github.io/imputeCGMRR/reference/run_missing_glucose_imputation.md)
+- [`run_missing_glucose_imputation()`](https://zhanglabuky.github.io/imputeCGMR/reference/run_missing_glucose_imputation.md)
   now supports selectable real-imputation methods through the existing
   `models` argument. The default `models = "auto"` keeps the
   missing-rate rule, using `MICE+ARIMA` when missingness is at or below

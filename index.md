@@ -34,7 +34,7 @@ original glucose column unchanged.
 
 ## What the imputation workflow does
 
-[`run_missing_glucose_imputation()`](https://zhanglabuky.github.io/imputeCGMRR/reference/run_missing_glucose_imputation.md)
+[`run_missing_glucose_imputation()`](https://zhanglabuky.github.io/imputeCGMR/reference/run_missing_glucose_imputation.md)
 performs the following steps:
 
 1.  reads a data frame or CSV file;
@@ -164,7 +164,7 @@ imputeCGM also includes a small Shiny app for users who prefer an
 interactive workflow. The app lets users upload a CSV file or load one
 of the built-in example data sets, choose the target glucose, subject
 ID, timestamp, and feature columns, run
-[`run_missing_glucose_imputation()`](https://zhanglabuky.github.io/imputeCGMRR/reference/run_missing_glucose_imputation.md),
+[`run_missing_glucose_imputation()`](https://zhanglabuky.github.io/imputeCGMR/reference/run_missing_glucose_imputation.md),
 preview rows with missing glucose values that were imputed, and download
 the completed data as a CSV file.
 
@@ -195,7 +195,7 @@ install.packages("shiny")
 
 For package developers, the app is stored under
 `inst/shiny/cgm_imputation_app/` and is launched through the exported
-[`run_app()`](https://zhanglabuky.github.io/imputeCGMRR/reference/run_app.md)
+[`run_app()`](https://zhanglabuky.github.io/imputeCGMR/reference/run_app.md)
 helper.
 
 ## Optional Python-compatible backend

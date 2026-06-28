@@ -1,4 +1,4 @@
-#' Launch the CGMmissingDataR Shiny App
+#' Launch the imputeCGM Shiny App
 #'
 #' @description
 #' Launches a Shiny app for uploading a CGM data file, selecting the target,
@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' # Run the CGMmissingDataR Shiny app
+#' # Run the imputeCGM Shiny app
 #' run_app()
 #' }
 #'
@@ -28,7 +28,7 @@ run_app <- function() {
   app_dir <- system.file(
     "shiny",
     "cgm_imputation_app",
-    package = "CGMissingDataR"
+    package = "imputeCGM"
   )
 
   if (identical(app_dir, "")) {

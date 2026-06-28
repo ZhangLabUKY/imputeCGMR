@@ -1,14 +1,14 @@
 ^LICENSE\.md$
 ^README\.Rmd$
 ^\.github$
-^CGMissingDataR_0\.0\.0\.9000\.pdf$
+^imputeCGM_0\.0\.0\.9000\.pdf$
 ^data-raw$
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
 ^doc$
 ^Meta$
-^vignettes/How-To-Use-CGMissingDataR_cache/
+^vignettes/How-To-Use-imputeCGM_cache/
 ^cran-comments\.md$
 ^CRAN-SUBMISSION$
 ^comprehensive_imputation_script_v2\.R$

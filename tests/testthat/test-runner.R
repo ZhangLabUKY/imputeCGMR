@@ -1,5 +1,5 @@
 test_that("public example dataset has expected missing glucose shape", {
-  data("CGMExmplDat10Pct", package = "CGMissingDataR")
+  data("CGMExmplDat10Pct", package = "imputeCGM")
 
   expect_equal(nrow(CGMExmplDat10Pct), 1440L)
   expect_equal(ncol(CGMExmplDat10Pct), 6L)
@@ -90,7 +90,7 @@ test_that("real missing glucose imputation returns strict-port data frame", {
   skip_if_not_installed("mice")
   skip_if_not_installed("data.table")
 
-  data("CGMExmplDat10Pct", package = "CGMissingDataR")
+  data("CGMExmplDat10Pct", package = "imputeCGM")
 
   out <- .suppress_expected_imputation_warnings(
     run_missing_glucose_imputation(
@@ -120,7 +120,7 @@ test_that("models = NULL works like automatic method selection", {
   skip_if_not_installed("mice")
   skip_if_not_installed("data.table")
 
-  data("CGMExmplDat10Pct", package = "CGMissingDataR")
+  data("CGMExmplDat10Pct", package = "imputeCGM")
 
   out <- .suppress_expected_imputation_warnings(
     run_missing_glucose_imputation(
@@ -281,9 +281,9 @@ test_that("automatic timestamp parsing reports unparseable timestamps", {
 
 test_that("sklearn Python engine works when explicitly enabled", {
   skip_on_cran()
-  if (!identical(Sys.getenv("CGMISSINGDATAR_TEST_PYTHON"), "true")) {
+  if (!identical(Sys.getenv("imputeCGM_TEST_PYTHON"), "true")) {
     skip(
-      "Set CGMISSINGDATAR_TEST_PYTHON=true to run optional Python-engine tests"
+      "Set imputeCGM_TEST_PYTHON=true to run optional Python-engine tests"
     )
   }
   skip_if_not_installed("reticulate")
@@ -296,7 +296,7 @@ test_that("sklearn Python engine works when explicitly enabled", {
     "xgboost"
   ))
 
-  data("CGMExmplDat10Pct", package = "CGMissingDataR")
+  data("CGMExmplDat10Pct", package = "imputeCGM")
 
   out <- run_missing_glucose_imputation(
     CGMExmplDat10Pct,
@@ -320,9 +320,9 @@ test_that("sklearn Python engine works when explicitly enabled", {
 
 test_that("sklearn Python engine supports forced real-imputation methods", {
   skip_on_cran()
-  if (!identical(Sys.getenv("CGMISSINGDATAR_TEST_PYTHON"), "true")) {
+  if (!identical(Sys.getenv("imputeCGM_TEST_PYTHON"), "true")) {
     skip(
-      "Set CGMISSINGDATAR_TEST_PYTHON=true to run optional Python-engine tests"
+      "Set imputeCGM_TEST_PYTHON=true to run optional Python-engine tests"
     )
   }
   skip_if_not_installed("reticulate")
@@ -375,7 +375,7 @@ test_that("Shiny app exposes and maps selectable imputation methods", {
     "shiny",
     "cgm_imputation_app",
     "app.R",
-    package = "CGMissingDataR"
+    package = "imputeCGM"
   )
   if (identical(app_path, "")) {
     app_path <- file.path(

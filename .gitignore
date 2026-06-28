@@ -8,7 +8,7 @@ inst/doc
 docs
 /doc/
 /Meta/
-vignettes/How-To-Use-CGMissingDataR_cache
+vignettes/How-To-Use-imputeCGM_cache
 cran-comments.md
 CRAN-SUBMISSiON
 /data-raw/Test-Data.csv

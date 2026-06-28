@@ -47,7 +47,7 @@ options(shiny.maxRequestSize = 1024^3)
 }
 
 ui <- fluidPage(
-  titlePanel("CGMmissingDataR: Missing Glucose Imputation"),
+  titlePanel("imputeCGM: Missing Glucose Imputation"),
 
   sidebarLayout(
     sidebarPanel(
@@ -215,7 +215,7 @@ ui <- fluidPage(
   )
 )
 .load_example_data <- function(object_name) {
-  ns <- tryCatch(asNamespace("CGMissingDataR"), error = function(e) NULL)
+  ns <- tryCatch(asNamespace("imputeCGM"), error = function(e) NULL)
 
   if (!is.null(ns) && exists(object_name, envir = ns, inherits = FALSE)) {
     return(get(object_name, envir = ns, inherits = FALSE))
@@ -224,7 +224,7 @@ ui <- fluidPage(
   env <- new.env(parent = emptyenv())
   ok <- tryCatch(
     {
-      data(list = object_name, package = "CGMissingDataR", envir = env)
+      data(list = object_name, package = "imputeCGM", envir = env)
       exists(object_name, envir = env, inherits = FALSE)
     },
     error = function(e) FALSE

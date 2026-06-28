@@ -1,4 +1,16 @@
-# CGMissingDataR 0.0.2
+# imputeCGM 0.0.3
+
+## Major changes
+
+* Renamed the package from `CGMissingDataR` to `imputeCGM`.
+
+* Updated package metadata, GitHub links, pkgdown links, README content,
+  vignette names, manual pages, tests, and Shiny app package references for the
+  new `imputeCGM` package identity.
+
+* Documentation now points to the new GitHub repository named `imputeCGMR`.
+
+# imputeCGM 0.0.2
 
 ## Major changes
 
@@ -52,6 +64,6 @@
   output structure, selectable final imputation methods, the bundled Shiny app,
   backend options, and post-imputation rounding.
 
-# CGMissingDataR 0.0.1
+# imputeCGM 0.0.1
 
 * Initial package creation preparing for CRAN submission.

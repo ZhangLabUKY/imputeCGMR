@@ -1,8 +1,8 @@
 ---
-title: "How To Use CGMmissingDataR"
+title: "How To Use imputeCGM"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{How To Use CGMmissingDataR}
+  %\VignetteIndexEntry{How To Use imputeCGM}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 
 # Overview
 
-CGMmissingDataR imputes missing glucose values in continuous glucose monitoring
+imputeCGM imputes missing glucose values in continuous glucose monitoring
 (CGM) data. The main user-facing function is:
 
 ```r
@@ -60,20 +60,20 @@ The core workflow is:
 Install the CRAN release with:
 
 ```r
-install.packages("CGMissingDataR")
+install.packages("imputeCGM")
 ```
 
 Install the development version with:
 
 ```r
 install.packages("devtools")
-devtools::install_github("ZhangLabUKY/CGMmissingDataR")
+devtools::install_github("ZhangLabUKY/imputeCGMR")
 ```
 
 Load the package:
 
 ```{r setup}
-library(CGMissingDataR)
+library(imputeCGM)
 ```
 
 # Example data

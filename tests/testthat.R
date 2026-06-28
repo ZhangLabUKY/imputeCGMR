@@ -10,6 +10,6 @@ if (requireNamespace("data.table", quietly = TRUE)) {
   data.table::setDTthreads(1)
 }
 library(testthat)
-library(CGMissingDataR)
+library(imputeCGM)
 
-test_check("CGMissingDataR")
+test_check("imputeCGM")

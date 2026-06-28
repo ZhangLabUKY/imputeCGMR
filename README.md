@@ -1,18 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# CGMmissingDataR
+# imputeCGM
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/ZhangLabUKY/CGMmissingDataR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ZhangLabUKY/CGMmissingDataR/actions/workflows/R-CMD-check.yaml)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/CGMissingDataR)](https://CRAN.R-project.org/package=CGMissingDataR)
-[![CRAN
-checks](https://badges.cranchecks.info/summary/CGMissingDataR.svg)](https://cran.r-project.org/web/checks/check_results_CGMissingDataR.html)
-[![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/CGMissingDataR)](https://cran.r-project.org/package=CGMissingDataR)
+[![R-CMD-check](https://github.com/ZhangLabUKY/imputeCGMR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ZhangLabUKY/imputeCGMR/actions/workflows/R-CMD-check.yaml)
 [![Last Commit
-Release](https://img.shields.io/github/last-commit/ZhangLabUKY/CGMmissingDataR/master)](https://github.com/ZhangLabUKY/CGMmissingDataR/commits/master/)
+Release](https://img.shields.io/github/last-commit/ZhangLabUKY/imputeCGMR/master)](https://github.com/ZhangLabUKY/imputeCGMR/commits/master/)
 <!-- badges: end -->
 
 ## Installation
@@ -20,17 +15,17 @@ Release](https://img.shields.io/github/last-commit/ZhangLabUKY/CGMmissingDataR/m
 Install the released version from CRAN:
 
 ``` r
-install.packages("CGMissingDataR")
+install.packages("imputeCGM")
 ```
 
 Or install the development version from GitHub:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("ZhangLabUKY/CGMmissingDataR")
+devtools::install_github("ZhangLabUKY/imputeCGMR")
 ```
 
-CGMmissingDataR imputes missing glucose values in continuous glucose
+imputeCGM imputes missing glucose values in continuous glucose
 monitoring (CGM) data. The main public workflow is:
 
 ``` r
@@ -105,7 +100,7 @@ reticulate::py_install("lightgbm", pip = TRUE)
 ## Basic use
 
 ``` r
-library(CGMissingDataR)
+library(imputeCGM)
 
 data("CGMExmplDat10Pct")
 
@@ -166,7 +161,7 @@ missing glucose values.
 
 ## Bundled Shiny app
 
-CGMmissingDataR also includes a small Shiny app for users who prefer an
+imputeCGM also includes a small Shiny app for users who prefer an
 interactive workflow. The app lets users upload a CSV file or load one
 of the built-in example data sets, choose the target glucose, subject
 ID, timestamp, and feature columns, run
@@ -228,14 +223,14 @@ The main vignette contains a detailed walkthrough of data requirements,
 timestamp regularization, return columns, backend selection, optional
 Python setup, and troubleshooting:
 
-<https://zhanglabuky.github.io/CGMmissingDataR/articles/How-To-Use-CGMissingDataR.html>
+<https://zhanglabuky.github.io/imputeCGMR/articles/How-To-Use-imputeCGM.html>
 
 A separate Shiny app vignette walks through the interactive interface:
 
-<https://zhanglabuky.github.io/CGMmissingDataR/articles/Using-the-CGMissingDataR-Shiny-App.html>
+<https://zhanglabuky.github.io/imputeCGMR/articles/Using-the-imputeCGM-Shiny-App.html>
 
 ## Changelog
 
 The changelog is available at:
 
-<https://zhanglabuky.github.io/CGMmissingDataR/news/index.html>
+<https://zhanglabuky.github.io/imputeCGMR/news/index.html>

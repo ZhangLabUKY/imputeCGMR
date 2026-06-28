@@ -1,4 +1,4 @@
-#' CGMmissingDataR: Impute Missing Glucose Values in CGM Data
+#' imputeCGM: Impute Missing Glucose Values in CGM Data
 #'
 #' Imputes missing glucose values in repeated-measures continuous glucose
 #' monitoring (CGM) data. Workflows create time-series features from raw

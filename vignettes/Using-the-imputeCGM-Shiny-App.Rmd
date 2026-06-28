@@ -1,8 +1,8 @@
 ---
-title: "Using the CGMmissingDataR Shiny App"
+title: "Using the imputeCGM Shiny App"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Using the CGMmissingDataR Shiny App}
+  %\VignetteIndexEntry{Using the imputeCGM Shiny App}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 
 # Overview
 
-CGMmissingDataR includes an optional Shiny app for interactive missing glucose
+imputeCGM includes an optional Shiny app for interactive missing glucose
 imputation. The app is a point-and-click interface around the main package
 function:
 
@@ -49,10 +49,10 @@ missing.
 
 # Installation
 
-Install CGMmissingDataR from CRAN with:
+Install imputeCGM from CRAN with:
 
 ```r
-install.packages("CGMissingDataR")
+install.packages("imputeCGM")
 ```
 
 The app requires the optional R package `shiny`. If Shiny is not already
@@ -65,7 +65,7 @@ install.packages("shiny")
 Then load the package:
 
 ```{r setup}
-library(CGMissingDataR)
+library(imputeCGM)
 ```
 
 # Launching the app
@@ -90,7 +90,7 @@ The app is bundled inside the installed package, typically under:
 system.file(
   "shiny",
   "cgm_imputation_app",
-  package = "CGMissingDataR"
+  package = "imputeCGM"
 )
 ```
 
@@ -452,7 +452,7 @@ run_app <- function() {
   app_dir <- system.file(
     "shiny",
     "cgm_imputation_app",
-    package = "CGMissingDataR"
+    package = "imputeCGM"
   )
   shiny::runApp(app_dir, display.mode = "normal")
 }
